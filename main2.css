@@ -1,0 +1,365 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 9s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    overflow: hidden; /* Tambahkan overflow untuk efek scroll */
+  }
+  
+  .image, .content {
+    flex: 1;
+  }
+  
+  .image {
+    max-width: 50%;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    padding: 0 20px;
+  }
+  
+  .content h1 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  p {
+    color: #333;
+    font-family: "Satisfy", cursive;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .container2 {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .header {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 30px;
+  }
+  nav ul li:hover {
+    background-color: #333;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: antiquewhite;
+    background-color: #333;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  .mepelai {
+    text-align: center;
+    color: #333;
+    padding-top: 10px;
+    opacity: 0; /* Opacity awal diatur menjadi 0 */
+    animation: slideDown 4s ease forwards;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo-container img {
+    max-width: 100%;
+    height: 50px;
+    opacity: 70%;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    opacity: 0; /* Opacity awal diatur menjadi 0 */
+    animation: fadeInScroll 4s ease forwards;
+  }
+  
+  @keyframes fadeInScroll {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    overflow: hidden; /* Tambahkan overflow untuk efek scroll */
+  }
+  /* CSS untuk tampilan desktop */
+.image {
+  max-width: 50%;
+}
+
+/* CSS untuk tampilan mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Mengubah arah tata letak menjadi kolom */
+    text-align: center; /* Pusatkan konten */
+  }
+
+  .image {
+    order: -1; /* Pindahkan elemen .image ke atas */
+    max-width: 100%; /* Sesuaikan lebar gambar dengan lebar layar */
+  }
+
+  .content {
+    padding: 20px; /* Tambahkan ruang di sekitar konten */
+  }
+}
+.gambar2 {
+  display: flex;
+  justify-content: center; /* Pusatkan div .image */
+  gap: 20px; /* Jarak antara gambar */
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%; /* Lebar maksimum setengah dari container */
+}
+
+.image img {
+  width: 100%; /* Gambar akan mengisi lebar div .image */
+  height: auto; /* Tinggi gambar disesuaikan untuk menjaga rasio aspek */
+  border-radius: 30px;
+}
+.Lokasi {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 30px;
+}
+
+h2 {
+  color:antiquewhite;
+  font-size: 22px;
+  font-weight: normal;
+  
+}
+p2 {
+  color: antiquewhite;
+}
+
+.event-info {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+.map-container {
+  width: 100%;
+  max-width: 600px; /* Lebar maksimum peta */
+  height: 400px; /* Tinggi peta */
+  background-color: #333;
+  margin: 0 auto; /* Pusatkan peta secara horizontal */
+  padding-bottom: 30px;
+}
+/* Styling untuk responsivitas peta */
+@media (max-width: 768px) {
+  .map-container {
+    height: 600px; /* Tinggi peta untuk perangkat mobile */
+  }
+}
+/* Aturan media query untuk tampilan mobile */
+@media (max-width: 558px) {
+  .map-container {
+    height: 500px; /* Tinggi peta untuk perangkat mobile */
+  }
+}
+
+.katakata {
+  min-height: 100vh;
+  background-color:#4e4c4c; /* Background abu-abu */
+  display: flex;
+  color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Mengubah tata letak menjadi kolom */
+  position: relative; /* Membuat posisi gambar menjadi relatif terhadap .container */
+}
+
+.gambar-atas,
+.gambar-bawah {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  position: center;
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box; /* Membuat padding dihitung dalam total lebar */
+}
+
+h1 {
+  color: #333; /* Warna teks judul */
+}
+
+.p4 {
+  padding-top: 30px;
+  color:antiquewhite; /* Warna teks deskripsi */
+  font-family: "Satisfy", cursive;
+}
+
+/* Menyesuaikan posisi gambar */
+.gambar-atas {
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.gambar-bawah {
+  bottom: 0;
+  left: 0;
+  width: 300px;
+}
+.countdown {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(19, 17, 17);
+  color:antiquewhite;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.container4 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+input[type="text"], textarea, input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+h5 {
+  color: #333;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.footer p {
+  background-color: #232222;
+  margin: 0;
+  color: antiquewhite;
+  font-family: sans-serif;
+}
+.footer-logo {
+  margin: 20PX;
+  border-radius: 20px;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .footer {
+      padding: 10px;
+  }
+  .footer-logo {
+      max-width: 80px;
+  }
+}

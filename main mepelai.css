@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeInAnimation 2s ease forwards; /* Animation for fading in */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+
+p {
+    font-family: "Satisfy", cursive;
+    color: antiquewhite;
+}
+
+.container1 {
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.p2 {
+    font-family: sans-serif;
+    color: antiquewhite;
+    font-size: 20px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust styles for devices with a maximum width of 768px */
+    .container1 {
+        padding-top: 10px;
+    }
+    .p2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for devices with a maximum width of 480px */
+    .container1 {
+        padding-top: 5px;
+    }
+    .p2 {
+        font-size: 14px;
+    }
+}
+/* Menyesuaikan posisi gambar */
+.gambar-atas {
+    top: 0;
+    left: 0;
+    width: 200px;
+  }
+  
+  .gambar-bawah {
+    bottom: 0;
+    left: 0;
+    width: 300px;
+  }
